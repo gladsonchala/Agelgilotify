@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import UserDashboard from './components/User/UserDashboard';
-import AdminDashboard from './components/Admin/AdminPanel';
+import AdminDashboard from './components/Admin/AdminDashboard';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
-          <Route path="/admin" component={AdminPanel} />
+          <Route path="/admin" component={AdminDashboard} />
           <Route path="/" component={UserDashboard} />
         </Switch>
         <Footer />
