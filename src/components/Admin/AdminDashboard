@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function AdminPanel() {
+function AdminDashboard() {
   const [hotels, setHotels] = useState([]);
 
   const handleAddHotel = () => {
@@ -23,7 +23,7 @@ function AdminPanel() {
 
   return (
     <div>
-      <h2>Admin Panel</h2>
+      <h2>Admin Dashboard</h2>
       <button onClick={handleAddHotel}>Add Hotel</button>
       <ul>
         {hotels.map((hotel, index) => (
