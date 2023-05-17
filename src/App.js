@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import UserDashboard from './components/User/UserDashboard';
 import AdminDashboard from './components/Admin/AdminDashboard';
+import './styles/index.css';
 
 function App() {
   return (
