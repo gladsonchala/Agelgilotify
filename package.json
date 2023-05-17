@@ -1,0 +1,27 @@
+{
+  "name": "agelgilotify",
+  "version": "1.0.0",
+  "description": "Hotel Bedroom Booking System",
+  "scripts": {
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "firebase": "^9.4.0",
+    "axios": "^0.24.0"
+    // Add other dependencies here as needed
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.0",
+    // Add other development dependencies here as needed
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "license": "MIT"
+}
