@@ -14,11 +14,9 @@
     "react-router-dom": "^5.2.0",
     "firebase": "^9.4.0",
     "axios": "^0.24.0"
-    // Add other dependencies here as needed
   },
   "devDependencies": {
-    "react-scripts": "^5.0.0",
-    // Add other development dependencies here as needed
+    "react-scripts": "^5.0.0"
   },
   "engines": {
     "node": "14.x"
