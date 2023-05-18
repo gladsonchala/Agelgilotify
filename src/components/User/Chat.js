@@ -17,11 +17,13 @@ function Chat() {
   }, []);
 
   return (
-    <div>
-      <h2>Chat</h2>
-      <div>
+    <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+      <h2 style={{ fontSize: '24px', marginBottom: '20px' }}>Chat</h2>
+      <div style={{ marginBottom: '20px' }}>
         {messages.map((message, index) => (
-          <div key={index}>{message}</div>
+          <div key={index} style={{ background: '#f4f4f4', padding: '10px', marginBottom: '10px' }}>
+            {message}
+          </div>
         ))}
       </div>
       <form onSubmit={handleMessageSubmit}>
@@ -30,8 +32,9 @@ function Chat() {
           placeholder="Type your message..."
           value={newMessage}
           onChange={(e) => setNewMessage(e.target.value)}
+          style={{ marginRight: '10px', padding: '5px' }}
         />
-        <button type="submit">Send</button>
+        <button type="submit" style={{ padding: '5px 10px' }}>Send</button>
       </form>
     </div>
   );
