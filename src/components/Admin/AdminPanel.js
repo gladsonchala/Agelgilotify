@@ -22,17 +22,37 @@ function AdminPanel() {
   };
 
   return (
-    <div>
-      <h2>Admin Panel</h2>
-      <button onClick={handleAddHotel}>Add Hotel</button>
-      <ul>
+    <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+      <h2 style={{ fontSize: '24px', marginBottom: '20px' }}>Admin Panel</h2>
+      <button
+        onClick={handleAddHotel}
+        style={{ padding: '5px 10px', marginBottom: '10px' }}
+      >
+        Add Hotel
+      </button>
+      <ul style={{ listStyle: 'none', padding: '0' }}>
         {hotels.map((hotel, index) => (
-          <li key={index}>
+          <li
+            key={index}
+            style={{
+              background: '#f4f4f4',
+              padding: '10px',
+              marginBottom: '10px',
+            }}
+          >
             <div>
-              <h3>{hotel.name}</h3>
-              <p>Location: {hotel.location}</p>
-              <p>Price Range: {hotel.priceRange}</p>
-              <button onClick={() => handleDeleteHotel(index)}>Delete Hotel</button>
+              <h3 style={{ marginBottom: '5px' }}>{hotel.name}</h3>
+              <p style={{ margin: '0' }}>Location: {hotel.location}</p>
+              <p style={{ margin: '0' }}>Price Range: {hotel.priceRange}</p>
+              <button
+                onClick={() => handleDeleteHotel(index)}
+                style={{
+                  padding: '5px 10px',
+                  marginTop: '5px',
+                }}
+              >
+                Delete Hotel
+              </button>
             </div>
           </li>
         ))}
