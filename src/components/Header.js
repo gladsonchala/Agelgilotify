@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header>
+    <header style={{ background: '#333', color: '#fff', padding: '10px' }}>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
+        <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'center' }}>
+          <li style={{ margin: '0 10px' }}>
+            <Link to="/" style={{ color: '#fff', textDecoration: 'none' }}>Home</Link>
           </li>
-          <li>
-            <Link to="/login">Login</Link>
+          <li style={{ margin: '0 10px' }}>
+            <Link to="/login" style={{ color: '#fff', textDecoration: 'none' }}>Login</Link>
           </li>
-          <li>
-            <Link to="/signup">Signup</Link>
+          <li style={{ margin: '0 10px' }}>
+            <Link to="/signup" style={{ color: '#fff', textDecoration: 'none' }}>Signup</Link>
           </li>
-          <li>
-            <Link to="/admin">Admin</Link>
+          <li style={{ margin: '0 10px' }}>
+            <Link to="/admin" style={{ color: '#fff', textDecoration: 'none' }}>Admin</Link>
           </li>
         </ul>
       </nav>
