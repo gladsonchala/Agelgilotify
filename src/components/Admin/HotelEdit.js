@@ -17,10 +17,10 @@ function HotelEdit({ hotel, updateHotel }) {
   };
 
   return (
-    <div>
-      <h2>Edit Hotel</h2>
+    <div style={{ maxWidth: '400px', margin: '0 auto' }}>
+      <h2 style={{ fontSize: '24px', marginBottom: '20px' }}>Edit Hotel</h2>
       <form onSubmit={handleSubmit}>
-        <label>
+        <label style={{ display: 'block', marginBottom: '10px' }}>
           Hotel Name:
           <input
             type="text"
@@ -28,9 +28,10 @@ function HotelEdit({ hotel, updateHotel }) {
             value={updatedHotel.name}
             onChange={handleInputChange}
             required
+            style={{ width: '100%', padding: '8px', borderRadius: '4px' }}
           />
         </label>
-        <label>
+        <label style={{ display: 'block', marginBottom: '10px' }}>
           Location:
           <input
             type="text"
@@ -38,9 +39,10 @@ function HotelEdit({ hotel, updateHotel }) {
             value={updatedHotel.location}
             onChange={handleInputChange}
             required
+            style={{ width: '100%', padding: '8px', borderRadius: '4px' }}
           />
         </label>
-        <label>
+        <label style={{ display: 'block', marginBottom: '10px' }}>
           Price Range:
           <input
             type="text"
@@ -48,9 +50,22 @@ function HotelEdit({ hotel, updateHotel }) {
             value={updatedHotel.priceRange}
             onChange={handleInputChange}
             required
+            style={{ width: '100%', padding: '8px', borderRadius: '4px' }}
           />
         </label>
-        <button type="submit">Update Hotel</button>
+        <button
+          type="submit"
+          style={{
+            padding: '8px 16px',
+            backgroundColor: '#2196f3',
+            color: 'white',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+          }}
+        >
+          Update Hotel
+        </button>
       </form>
     </div>
   );
