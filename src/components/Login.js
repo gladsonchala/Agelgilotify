@@ -11,18 +11,18 @@ function Login() {
   };
 
   return (
-    <div>
-      <h2>Login</h2>
+    <div style={{ maxWidth: '400px', margin: '0 auto' }}>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Login</h2>
       <form onSubmit={handleLogin}>
-        <div>
-          <label>Email:</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <div style={{ marginBottom: '10px' }}>
+          <label style={{ display: 'block', marginBottom: '5px' }}>Email:</label>
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} style={{ width: '100%', padding: '5px' }} />
         </div>
-        <div>
-          <label>Password:</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <div style={{ marginBottom: '10px' }}>
+          <label style={{ display: 'block', marginBottom: '5px' }}>Password:</label>
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} style={{ width: '100%', padding: '5px' }} />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" style={{ display: 'block', width: '100%', padding: '10px', background: '#333', color: '#fff', border: 'none' }}>Login</button>
       </form>
     </div>
   );
